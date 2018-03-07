@@ -1,0 +1,99 @@
+/* Generic styling */
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+div {
+  border: 1px solid red;
+}
+
+/* Header */
+
+.header {
+  height: 4rem;
+}
+
+.colmar {
+  align-items: center;
+  width: 50%;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+}
+
+.colmar span {
+  font-weight: bold;
+}
+
+.nav {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+  width: 50%;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Starting Point */
+
+.banner {
+  margin: 2rem 1.5rem;
+}
+
+.banner img {
+  width: 60%;
+  height: 100%;
+}
+
+.right {
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-left: 1.5rem;
+}
+
+.right h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.right p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.banner span {
+  width: 90%;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.button {
+  background-color: black;
+}
