@@ -19,6 +19,10 @@ body {
   width: 100%;
 }
 
+.section-content {
+  font-size: .8rem;
+  font-weight: 100;
+}
 
 .section-title {
   font-size: 1.75rem;
@@ -30,10 +34,41 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+
+.read-more a {
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.row {
+  align-items: center;
+}
+
+.light-background {
+  background-color: white;
+}
+
+.dark-background {
+  background-color: #dcdcdc;
+}
+
 /* Header */
 
-.header {
+header {
+  display: flex;
   height: 4rem;
+  align-items: center;
+  background-color: white;
 }
 
 .colmar {
@@ -86,7 +121,7 @@ body {
 }
 
 .right {
-  margin: 2rem 0;
+  margin: 2rem 0 2rem 1.5rem;
   width: 40%;
   align-items: center;
 }
@@ -96,20 +131,44 @@ body {
 }
 
 .start-here p {
-  padding: .75rem 0;
+  padding: 1rem 0;
+  width: 70%;
 }
 
 .start-here a {
-  background-color: grey;
+  background-color: #3b3c3d;
   padding: .5rem 5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.headline {
+  font-size: 2.15rem;
 }
 
 /* Campus Info */
 
+.content-box .section-title {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.content-box span {
+  margin-bottom: 2rem;
+}
+
+.author {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
 .campus-info {
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.campus-info .row {
+  border: 0.5px solid lightgrey;
 }
 
 .image-column {
@@ -133,9 +192,15 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  width: 95%;
 }
 
 /* Courses Section */
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
 
 .course-section {
   flex-direction: column;
@@ -143,7 +208,7 @@ body {
 
 .row {
   width: 100%;
-  margin: 2rem 4.5rem;
+  padding: 0.5rem;
 }
 
 .course {
@@ -151,10 +216,6 @@ body {
   flex-direction: column;
   width: 33%;
   margin: 0 1rem;
-}
-
-.course span {
-  margin-left: 1rem;
 }
 
 .course img {
@@ -174,6 +235,27 @@ body {
   margin: 0 3.5rem 2rem 3.5rem;
 }
 
+.course {
+  background-color: white;
+}
+
+.course span {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.course .title {
+  margin-bottom: 1rem;
+}
+
+.courses,
+.areas {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+}
+
+
 /* Exhibit Section */
 
 .video-container {
@@ -183,7 +265,6 @@ body {
 
 .urban {
   margin-bottom: 0.5rem;
-  font-weight: bold;
 }
 
 .left video {
@@ -211,6 +292,7 @@ body {
   width: 65%;
 }
 
+
 /* Footer */
 
 footer {
@@ -218,6 +300,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  font-size: 0.65rem;
 }
 
 .copyright {
@@ -242,4 +325,5 @@ li {
 li a {
   color: black;
   text-decoration: none;
+  padding-left: 0.5rem;
 }
