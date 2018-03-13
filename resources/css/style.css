@@ -223,11 +223,11 @@ header a:hover {
     background-color: white;
     border-radius: 25%;
     height: 2rem;
- }
+  }
 
- .mobile img {
+  .mobile img {
    display: grid;
- }
+  }
 
   .desktop {
     display: none;
@@ -240,7 +240,7 @@ header a:hover {
   .colmar {
     width: 20%;
   }
-}
+  }
 
 
 /* Starting Point */
@@ -371,7 +371,7 @@ header a:hover {
   width: 65%;
 }
 
-.image img {
+.image-container img {
   width: 100%
 }
 
@@ -407,14 +407,24 @@ header a:hover {
     flex-direction: column;
   }
 
+  .image {
+    overflow: hidden;
+  }
+
   .image-column {
-    width: 80%;
+    width: auto;
   }
 
   .image img {
-    height: auto;
     width: 100%;
+    height: auto;
+    display: block;
   }
+
+  .content {
+    margin-top: 1rem;
+  }
+
 }
 
 /* Courses Section */
@@ -494,6 +504,49 @@ header a:hover {
   -webkit-transition: all 400ms ease;
 }
 
+@media only screen and (max-width: 450px) {
+  .course img {
+    display: none;
+  }
+
+  .row-course {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+  }
+
+  .course span {
+    width: auto;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .courses,
+  .areas {
+    display: none;
+  }
+
+  .move:hover {
+    box-shadow: none;
+    top: 0;
+    position: inherit;
+    }
+  }
+
+  .course-section {
+    padding-bottom: 2rem;
+  }
+
+}
+
 /* Exhibit Section */
 
 .video-container {
@@ -530,6 +583,15 @@ header a:hover {
   width: 65%;
 }
 
+@media only screen and (max-width: 450px) {
+  .video-container span {
+    display: none;
+  }
+
+  .exhibit {
+    display: none;
+  }
+}
 
 /* Footer */
 
