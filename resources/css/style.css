@@ -363,7 +363,6 @@ header a:hover {
 
 .image-column {
   flex-direction: column;
-  width: 35%;
   padding-right: .5rem;
 }
 
@@ -449,6 +448,8 @@ header a:hover {
   flex-direction: column;
   width: 33%;
   margin: 0 1rem;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .course img {
@@ -456,6 +457,7 @@ header a:hover {
   height: auto;
   width: 100%;
   margin-bottom: 1rem;
+  border-radius: 0;
 }
 
 .areas {
@@ -471,11 +473,6 @@ header a:hover {
 .row-course img {
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
-}
-
-.course {
-  background-color: white;
-  border-radius: 5%;
 }
 
 .course span {
@@ -549,7 +546,13 @@ header a:hover {
 
 /* Exhibit Section */
 
+/* Video-Container would not style for some reason. Google inspector would not even show it. */
 .video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-exhibit {
   display: flex;
   flex-direction: column;
 }
@@ -575,9 +578,6 @@ header a:hover {
   padding: 1rem 1rem;
 }
 
-.exhibit-image {
-  width: 35%
-}
 
 .exhibit-info {
   width: 65%;
